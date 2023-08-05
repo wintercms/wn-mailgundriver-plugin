@@ -69,6 +69,7 @@ class Plugin extends PluginBase
                         'field'     => 'send_mode',
                         'condition' => 'value[mailgun]',
                     ],
+                    'default' => config('services.mailgun.domain'),
                 ],
                 'mailgun_secret' => [
                     'tab'     => 'system::lang.mail.general',
@@ -81,6 +82,7 @@ class Plugin extends PluginBase
                         'field'     => 'send_mode',
                         'condition' => 'value[mailgun]',
                     ],
+                    'default' => config('services.mailgun.secret'),
                 ],
             ]);
         });
